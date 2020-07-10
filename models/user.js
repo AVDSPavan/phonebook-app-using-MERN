@@ -5,7 +5,8 @@ var userSchema = mongoose.Schema(
         type: String,
         required: true,
         maxlength: 32,
-        trim: true
+        trim: true,
+        unique:true
       },
       dob: {
         type: Date,
@@ -15,7 +16,6 @@ var userSchema = mongoose.Schema(
           maxlength:13,
           required:true,
           unique:true,
-
       },
       email: {
         type: String,
